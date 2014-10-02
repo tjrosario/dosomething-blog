@@ -1,0 +1,19 @@
+{
+  "name": "dosomething-blog",
+  "version": "1.0.0",
+  "homepage": "",
+  "authors": [
+    "Tom Rosario <trosario@dosomething.org>"
+  ],
+  "description": "DoSomething.org app-specific styles and presentation logic.",
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components"
+  ],
+  "dependencies": {
+    "neue": "DoSomething/neue#~5.0.0"
+  }
+}

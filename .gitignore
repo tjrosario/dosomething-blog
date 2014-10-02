@@ -1,0 +1,7 @@
+wp-config.php
+wp-content/themes/dosomething-blog/bower_components
+wp-content/themes/dosomething-blog/node_modules
+wp-content/themes/dosomething-blog/dist
+*.DS_Store
+Gemfile.lock
+.htaccess
