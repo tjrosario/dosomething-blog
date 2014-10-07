@@ -2,11 +2,13 @@ box: wercker/php
 # Build definition
 deploy:
   steps:
-    - add-to-known_hosts:
-        hostname: $HOSTNAME
-        fingerprint: $FINGERPRINT
-        port: 2222
-    - blisteringherb/git-push@0.0.4
+    - bundle-install
+    - script:
+      name: write env var
+      code: |-
+        export CAP_PRIVATE_KEY=`mktemp`
+        echo -e $WERCKER_APP_KEY_PRIVATE > $CAP_PRIVATE_KEY
+    - cap
 #   after-steps:
 #     - hipchat-notify:
 #         token: $HIPCHAT_TOKEN
