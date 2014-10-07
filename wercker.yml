@@ -2,13 +2,9 @@ box: wercker/php
 # Build definition
 deploy:
   steps:
-    # - add-to-known_hosts:
-    #     hostname: ENV["HOSTNAME"]
-    #     fingerprint: ENV["FINGERPRINT"]
-    - leipert/git-push@0.4.4:
-        host: ENV["HOSTNAME"]
-        repo: ENV["REPOSITORY"]
-        branch: master
+    - script:
+        name: git push code to Pantheon
+        code: git push ENV["GIT_REMOTE_USER"]@ENV["HOSTNAME"]:ENV["REPOSITORY"]
 #   after-steps:
 #     - hipchat-notify:
 #         token: $HIPCHAT_TOKEN
