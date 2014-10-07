@@ -1,0 +1,10 @@
+box: wercker/php
+# Build definition
+# deploy:
+#   steps:
+#     - cap
+#   after-steps:
+#     - hipchat-notify:
+#         token: $HIPCHAT_TOKEN
+#         room-id: 710526
+#         from-name: wercker
