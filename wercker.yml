@@ -2,6 +2,9 @@ box: wercker/php
 # Build definition
 deploy:
   steps:
+    - add-to-known_hosts:
+        hostname: $HOSTNAME
+        fingerprint: $FINGERPRINT
     - blisteringherb/git-push@0.0.4
 #   after-steps:
 #     - hipchat-notify:
