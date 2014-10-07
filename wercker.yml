@@ -2,9 +2,7 @@ box: wercker/php
 # Build definition
 deploy:
   steps:
-    - script:
-        name: git push code to Pantheon
-        code: git push ssh://$GIT_REMOTE_USER@$HOSTNAME:$REPOSITORY
+    - blisteringherb/step-git-push@0.0.1
 #   after-steps:
 #     - hipchat-notify:
 #         token: $HIPCHAT_TOKEN
