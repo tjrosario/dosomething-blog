@@ -2,7 +2,7 @@ box: wercker/php
 # Build definition
 deploy:
   steps:
-    - blisteringherb/step-git-push@0.0.1
+    - blisteringherb/git-push@0.0.1
 #   after-steps:
 #     - hipchat-notify:
 #         token: $HIPCHAT_TOKEN
