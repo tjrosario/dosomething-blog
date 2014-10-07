@@ -1,8 +1,14 @@
 box: wercker/php
 # Build definition
-# deploy:
-#   steps:
-#     - cap
+deploy:
+  steps:
+    - add-to-known_hosts:
+        hostname: ENV["HOSTNAME"]
+        fingerprint: ENV["FINGERPRINT"]
+    - git-push:
+         host: ENV["HOSTNAME"]
+         repo: ENV["REPOSITORY"]
+         branch: master
 #   after-steps:
 #     - hipchat-notify:
 #         token: $HIPCHAT_TOKEN
