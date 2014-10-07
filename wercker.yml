@@ -5,6 +5,7 @@ deploy:
     - add-to-known_hosts:
         hostname: ENV["HOSTNAME"]
         fingerprint: ENV["FINGERPRINT"]
+    - leipert/git-push@0.4.4
     - git-push:
          host: ENV["HOSTNAME"]
          repo: ENV["REPOSITORY"]
