@@ -2,9 +2,9 @@ box: wercker/php
 # Build definition
 deploy:
   steps:
-    - add-to-known_hosts:
-        hostname: ENV["HOSTNAME"]
-        fingerprint: ENV["FINGERPRINT"]
+    # - add-to-known_hosts:
+    #     hostname: ENV["HOSTNAME"]
+    #     fingerprint: ENV["FINGERPRINT"]
     - leipert/git-push@0.4.4:
         host: ENV["HOSTNAME"]
         repo: ENV["REPOSITORY"]
