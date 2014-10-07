@@ -4,9 +4,9 @@ deploy:
   steps:
     - script:
         name: git push code to Pantheon
-        code: git push ENV["GIT_REMOTE_USER"]@ENV["HOSTNAME"]:ENV["REPOSITORY"]
+        code: git push $GIT_REMOTE_USER@$HOSTNAME:$REPOSITORY
 #   after-steps:
 #     - hipchat-notify:
 #         token: $HIPCHAT_TOKEN
-#         room-id: 710526
+#         room-id: $HIPCHAT_ROOM_ID
 #         from-name: wercker
