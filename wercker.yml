@@ -5,6 +5,7 @@ deploy:
     - add-to-known_hosts:
         hostname: $HOSTNAME
         fingerprint: $FINGERPRINT
+        port: 2222
     - blisteringherb/git-push@0.0.4
 #   after-steps:
 #     - hipchat-notify:
