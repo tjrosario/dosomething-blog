@@ -4,10 +4,10 @@ deploy:
   steps:
     - bundle-install
     - script:
-      name: write env var
-      code: |-
-        export CAP_PRIVATE_KEY=`mktemp`
-        echo -e $WERCKER_APP_KEY_PRIVATE > $CAP_PRIVATE_KEY
+        name: write env var
+        code: |-
+          export CAP_PRIVATE_KEY=`mktemp`
+          echo -e $WERCKER_APP_KEY_PRIVATE > $CAP_PRIVATE_KEY
     - cap
 #   after-steps:
 #     - hipchat-notify:
