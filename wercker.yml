@@ -4,7 +4,7 @@ deploy:
   steps:
     - script:
         name: git push code to Pantheon
-        code: git push $GIT_REMOTE_USER@$HOSTNAME:$REPOSITORY
+        code: git push ssh://$GIT_REMOTE_USER@$HOSTNAME:$REPOSITORY
 #   after-steps:
 #     - hipchat-notify:
 #         token: $HIPCHAT_TOKEN
