@@ -25,4 +25,4 @@ namespace :deploy do
 end
 
 after "deploy:update", "deploy:cleanup"
-after "deploy:symlink", "deploy:link_folders"
+after "deploy:create_symlink", "deploy:link_folders"
