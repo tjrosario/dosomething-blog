@@ -113,7 +113,7 @@ switch ($magazine_strcutre) {
           break;
 }
 
-$output .= '<div class="'.$loop_wrapper.'"><section data-style="' . $style . '" data-uniqid="'.$item_id.'" class="mk-blog-container mk-theme-loop mk-' . $style . '-wrapper '.$magazine_style_class.' ' . $paginaton_style_class . ' ' . $el_class . '" >' . "\n";
+$output .= '<div id="content" class="'.$loop_wrapper.'"><section data-style="' . $style . '" data-uniqid="'.$item_id.'" class="mk-blog-container mk-theme-loop mk-' . $style . '-wrapper '.$magazine_style_class.' ' . $paginaton_style_class . ' ' . $el_class . '" >' . "\n";
 
 $i = 0;
 if (is_archive()):

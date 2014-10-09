@@ -1,4 +1,5 @@
 .mk-blog-modern-item {
+  @include clearfix();
 
   .mk-blog-meta {
     margin-left: 0;

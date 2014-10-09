@@ -1045,7 +1045,7 @@ if (!function_exists('mk_theme_blog_pagenavi')) {
                
                echo '<div class="mk-pagination mk-grid">' . "\n";
                echo '<div class="mk-pagination-previous">';
-               previous_posts_link('');
+               previous_posts_link('Newer Posts');
                echo '</div>';
                echo '<div class="mk-pagination-inner">';
                if (!empty($pages_text)) {
@@ -1082,7 +1082,7 @@ if (!function_exists('mk_theme_blog_pagenavi')) {
                
                echo '</div>';
                echo '<div class="mk-pagination-next">';
-               next_posts_link('', $max_page);
+               next_posts_link('Older Posts', $max_page);
                echo '</div>';
                echo '<div class="mk-total-pages">' . __('page', 'mk_framework') . '&nbsp;&nbsp;' . $current_page_text . '&nbsp;&nbsp;' . ' of ' . '&nbsp;&nbsp;' . $max_page . '</div>';
                echo '</div>' . $after . "\n";
