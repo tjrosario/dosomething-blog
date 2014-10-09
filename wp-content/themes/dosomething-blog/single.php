@@ -61,6 +61,9 @@ get_header(); ?>
 	?>
 
 	<div class="theme-page-wrapper mk-blog-single <?php echo $single_layout; ?>-layout vc_row-fluid mk-grid <?php echo $padding; ?>">
+		<div class="return">
+			<a href="<?php echo get_home_url(); ?>">&lt; Blog Home</a>
+		</div>
 		<div class="theme-content <?php echo $padding; ?>">
 		<article id="<?php the_ID(); ?>" <?php post_class(); ?>>
 			<?php
@@ -73,6 +76,7 @@ get_header(); ?>
 							<img alt="<?php the_title(); ?>" title="<?php the_title(); ?>" src="<?php echo $image_src; ?>" height="<?php echo $image_height; ?>" width="<?php echo $image_width; ?>" itemprop="image" />
 						</div>
 				<?php endif; ?>
+
 			<?php }elseif ($post_type == 'portfolio'){
             $featured_image_id = get_post_thumbnail_id();
             $attachment_ids = get_post_meta($post->ID, '_gallery_images', true);
@@ -221,6 +225,8 @@ get_header(); ?>
 							 endif;
 
  ?>
+ 
+			<div class="article-wrapper">
 							<time class="mk-post-date" datetime="<?php the_date() ?>">
 								<?php _e('', 'mk_framework'); ?> <a href="<?php echo get_month_link( get_the_time( "Y" ), get_the_time( "m" ) ); ?>"><?php echo get_the_date(); ?></a>
 							</time>
@@ -350,6 +356,7 @@ get_header(); ?>
 						}
 					endif;
 					?>
+				</div>
 			</article>
 			
 			</div>

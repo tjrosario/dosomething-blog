@@ -7860,7 +7860,7 @@ a.jp-shuffle-off:hover {
   display: inline-block;
   margin: 3px 2px;
 }
-*/
+
 .blog-modern-social-section {
   float: left;
   width: 50px;
@@ -7868,7 +7868,7 @@ a.jp-shuffle-off:hover {
   border-right: 1px solid #efefef;
   text-transform: center;
   margin-left: 20px;
-}
+}*/
 .mk-blog-classic-item {
   margin-bottom: 50px;
   border: 1px solid #eee;
@@ -13349,7 +13349,7 @@ img.aligncenter {
   display: none;
 }
 /* Pullquotes
--------------------------------------------------------------- */
+-------------------------------------------------------------- 
 blockquote {
   position: relative;
   background-color: #f6f6f6;
@@ -13379,7 +13379,7 @@ blockquote.right {
   margin-right: 0;
   text-align: left;
   width: 33%;
-}
+}*/
 /* Tables
 -------------------------------------------------------------- */
 table {

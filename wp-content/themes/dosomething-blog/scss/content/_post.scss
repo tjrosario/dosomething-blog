@@ -1,23 +1,27 @@
 .mk-blog-modern-item {
-  margin-bottom: 0;
-
-  .featured-image {
-    @include media($tablet) {
-      @include span-columns(4 of 12);
-    }
-  }
 
   .mk-blog-meta {
-    @include media($tablet) {
-      @include span-columns(8 of 12);
+    margin-left: 0;
+  }
+
+  &.image-post-type {
+    .featured-image {
+      @include media($tablet) {
+        @include span-columns(4 of 12);
+      }
     }
 
-    margin-left: 0;
+    .mk-blog-meta {
+      @include media($tablet) {
+        @include span-columns(8 of 12);
+      }
+    }
   }
 
   .blog-modern-social-section {
     @include media($tablet) {
-      @include span-columns(6 of 12);
+      @include span-columns(3 of 12);
+      float: right;
     }
 
     margin: 0;
@@ -29,7 +33,7 @@
 
   .view {
     @include media($tablet) {
-      @include span-columns(6 of 12);
+      @include span-columns(4 of 12);
     }
   }
 
@@ -60,10 +64,13 @@
 
   .blog-social-share {
     display: block !important;
-    float: right;
     margin-top: 30px;
     opacity: 1 !important;
     padding-left: 0;
+
+    @include media($tablet) {
+      float: right;
+    }
 
     li {
       float: left;
@@ -92,7 +99,17 @@
 }
 
 .mk-blog-single {
+  .article-wrapper {
+    padding: 0 20px;
+  }
+
+  article {
+    border: 1px solid $light-gray;
+  }
+
   .blog-single-title {
+    line-height: 1.2;
+
     @include media($tablet) {
       @include span-columns(9 of 12);
     }
@@ -100,6 +117,11 @@
 
   .blog-single-meta {
     float: none;
+    line-height: 1;
+  }
+
+  .return {
+    margin: 0 0 10px;
   }
 }
 
@@ -204,6 +226,11 @@
     font-size: $font-small;
     font-style: normal;
   }
+
+  .mk-post-cat {
+    border-left: 1px solid $med-gray;
+    padding-left: 5px;
+  }
 }
 
 .mk-about-author-wrapper {
@@ -253,5 +280,35 @@
   a {
     color: $blue;
     font-size: $font-small;
+  }
+}
+
+blockquote {
+  line-height: 1.2;
+  margin-bottom: 27px;
+  text-align: center;
+
+  @include media($tablet) {
+    padding: 0 150px;
+  }
+
+  &:before,
+  &:after {
+    background: $light-gray;
+    content: " ";
+    display: block;
+    height: 5px;
+    margin: 0 auto;
+    width: 70%;
+  }
+
+  p {
+    @include media($tablet) {
+      font-size: $font-large;
+    }
+
+    font-style: italic;
+    margin-bottom: 0;
+    padding: 10px 0;
   }
 }
