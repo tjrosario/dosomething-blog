@@ -883,7 +883,7 @@ textarea,
 .mk-blog-newspaper-item .newspaper-meta-wrapper,
 .mk-blog-newspaper-item .featured-image a.permalink-badge,
 .mk-blog-newspaper-item .featured-image a.zoom-badge,
-.mk-pagination a,
+/*.mk-pagination a,*/
 .mk-woocommerce-pagination a,
 .mk-blog-single-page .about-author-avatar-social-wrapper .about-author-social,
 .mk-blog-single-page .about-author-avatar-social-wrapper .about-author-social li a,
@@ -1002,12 +1002,14 @@ a.jp-pause,
   transition: all 0.25s ease-in-out;
   -webkit-perspective: 1000;
 }
+/*
 .mk-blog-container,
 .mk-portfolio-container,
 .mk-news-container,
 .mk-gallery-shortcode {
   opacity: 0;
 }
+*/
 /* *** Isotope Filtering *** */
 .isotope-item {
   z-index: 2;
@@ -8971,7 +8973,7 @@ Blog Teaser Style
 .mag-two-column-left .magazine-thumb-post {
   float: right;
 }
-/* * Pageination */
+/* * Pageination 
 .mk-pagination {
   margin: 40px auto;
   text-align: center;
@@ -9041,8 +9043,10 @@ Blog Teaser Style
 .mk-pagination .mk-pagination-previous a:before {
   font-family: 'themeIcons';
   content: "\e68d";
-}
+}*/
 @media handheld, only screen and (max-width: 767px) {
+
+  /*
   .mk-pagination .mk-total-pages,
   .mk-pagination .mk-pagination-inner {
     float: none;
@@ -9058,6 +9062,8 @@ Blog Teaser Style
   .mk-pagination .mk-pagination-previous a {
     display: none;
   }
+  */
+
 }
 .mk-page-links {
   margin: 10px 0 20px 10px;

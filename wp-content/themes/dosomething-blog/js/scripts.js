@@ -5,9 +5,45 @@ jQuery.exists = function(selector) {
     return (jQuery(selector).length > 0);
 };
 
+function ds_pagination () {
+    var $loader = $('.mk-preloader'),
+        containerSel = '.mk-blog-container',
+        moreBtnSel = '.mk-pagination-next a';
 
+    $('.mk-pagination-next a').on('click', function (ev) {
+        ev.preventDefault();
+        var $content = $('#content'),
+            $moreBtn = $content.find(moreBtnSel),
+            url = $(this).attr('href');
 
-$(document).ready(function() {
+        $loader.addClass('active'); 
+        $.ajax({
+            url: url,
+            success: function (data) {
+                var $newContent = $(data).find('#content'),
+                    $posts = $newContent.find(containerSel),
+                    $newMoreBtn = $newContent.find(moreBtnSel);
+
+                if ($posts.find('.mk-blog-modern-item').length > 0) {
+                    $content.find(containerSel).append($posts.html());
+                }
+
+                if ($newMoreBtn.length > 0) {
+                    $moreBtn.attr('href', $newMoreBtn.attr('href'));
+                } else {
+                    $moreBtn.parents('.mk-pagination').addClass('hidden');
+                }
+
+                $loader.removeClass('active');
+
+                onDomReady();
+                onWindowLoad();
+            }
+        });
+    });
+}
+
+function onDomReady () {
     mk_animated_contents();
     mk_lightbox_init();
     mk_login_form();
@@ -43,15 +79,16 @@ $(document).ready(function() {
     mk_one_pager_resposnive();
     mk_sidebar_navigation();
     mk_clients_mobile();
-});
+    ds_pagination(); 
+}
 
-$(window).load(function() {
+function onWindowLoad () {
     mk_edge_slider_init();
     mk_edge_slider_resposnive();
     mk_edge_parallax();
     mk_smooth_scroll_events();
     mk_swipe_slider();
-    mk_load_isotop_enabled_scripts();
+    //mk_load_isotop_enabled_scripts();
     mk_animated_columns();
     mk_unfold_footer();
     mk_blur_boxes();
@@ -64,6 +101,14 @@ $(window).load(function() {
     mk_parallax();
     mk_gallery();
     mk_edge_fullpage_pagination();
+}
+
+$(document).ready(function() {
+    onDomReady();
+});
+
+$(window).load(function() {
+    onWindowLoad();
 });
 
 
