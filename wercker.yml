@@ -4,7 +4,7 @@ build:
   steps:
     - script:
         name: install bundler
-        code: gem install bundler
+        code: sudo gem install bundler
     - script:
         name: install grunt
         code: sudo npm install grunt -g
