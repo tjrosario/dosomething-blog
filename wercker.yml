@@ -9,6 +9,9 @@ build:
         name: install grunt
         code: sudo npm install grunt -g
     - script:
+        name: install grunt
+        code: sudo npm install grunt-cli -g
+    - script:
         name: Build theme
         code: cd wp-content/themes/dosomething-blog && ./scripts/build-staging.sh
 deploy:
