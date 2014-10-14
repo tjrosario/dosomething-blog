@@ -3,6 +3,12 @@ box: blisteringherb/scholarship@0.0.6
 build:
   steps:
     - script:
+        name: install bundler
+        code: gem install bundler
+    - script:
+        name: install grunt
+        code: sudo npm install grunt -g
+    - script:
         name: Build theme
         code: cd wp-content/themes/dosomething-blog && ./scripts/build-staging.sh
 deploy:
