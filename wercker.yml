@@ -1,5 +1,10 @@
 box: wercker/php
 # Build definition
+build:
+  steps:
+    - script:
+        name: Build theme
+        code: cd wp-content/themes/dosomething-blog && ./scripts/build-staging.sh
 deploy:
   steps:
     - bundle-install
