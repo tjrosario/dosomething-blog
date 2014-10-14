@@ -1,4 +1,4 @@
-box: wercker/php
+box: blisteringherb/scholarship@0.0.6
 # Build definition
 build:
   steps:
