@@ -5,16 +5,6 @@
     margin-bottom: 0;
     margin-top: 0;
 
-    @include media($tablet) {
-      padding-bottom: 0;
-      padding-top: 0;
-    }
-
-    @include media($desktop) {
-      padding-bottom: 0;
-      padding-top: 0;
-    }
-
     .theme-content {
       padding: 0;
     }
@@ -105,7 +95,7 @@
         border-right: 0;
       }
 
-      &.current_page_item {
+      &.current-menu-item {
         &:before,
         &:after {
           top: 100%;
@@ -236,13 +226,13 @@
 
   .mk-pagination-next {
     a {
-      @include btn();
+      @include reveal();
     }
   }
 
   .mk-pagination-previous {
     a {
-      @include btn();
+      @include reveal();
     }
   }
 }
