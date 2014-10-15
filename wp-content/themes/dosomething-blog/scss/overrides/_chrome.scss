@@ -82,7 +82,7 @@
     li.menu-item {
       background: #fff;
       border-right: 2px solid $med-gray;
-      line-height: 1.2;
+      line-height: 1.1;
       padding: 10px 30px;
       position: relative;
 
@@ -136,9 +136,8 @@
       }
 
       a.menu-item-link {
-        color: $blue;
+        color: $purple;
         font-size: $font-medium;
-        text-transform: uppercase;
       }
     }
   }
