@@ -9,6 +9,7 @@ $asset-path: "";
 @import "../bower_components/neat/app/assets/stylesheets/neat";
 @import "../bower_components/neue/scss/neue";
 
+// Mixins
 @import "helpers/mixins";
 
 // Wordpress Jupiter Theme Overrides
@@ -17,3 +18,6 @@ $asset-path: "";
 
 @import "content/post";
 @import "content/author";
+
+// Categories
+@import "content/category/member-stories";

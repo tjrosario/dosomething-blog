@@ -50,3 +50,12 @@
     text-decoration: none;
   }
 }
+
+@mixin reveal () {
+  color: $med-gray;
+  cursor: pointer;
+  font-size: $font-regular;
+  font-weight: $weight-normal;
+  margin-bottom: 0;
+  text-decoration: underline;
+}
