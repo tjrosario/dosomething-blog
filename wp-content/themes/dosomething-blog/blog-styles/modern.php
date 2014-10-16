@@ -71,8 +71,10 @@ function blog_modern_style($atts, $current)
             } else {
                 $lightbox_code = ' href="' . get_permalink() . '"';
             }
+            /*
             $output .= '<div class="featured-image"><a title="' . get_the_title() . '"' . $lightbox_code . '>';
-
+            */
+            $output .= '<div class="featured-image"><a title="' . get_the_title() . '" href="' . get_permalink() . '">';
             $output .= '<img alt="' . get_the_title() . '" title="' . get_the_title() . '" src="' . $image_output_src . '" itemprop="image" />';
 
             $output .= '<div class="image-hover-overlay"></div>';
@@ -104,7 +106,11 @@ function blog_modern_style($atts, $current)
                 } else {
                     $lightbox_code = ' href="' . get_permalink() . '"';
                 }
+                /*
                 $output .= '<div class="featured-image"><a title="' . get_the_title() . '"' . $lightbox_code . '>';
+                */
+
+                $output .= '<div class="featured-image"><a title="' . get_the_title() . '" href="' . get_permalink() . '">';
 
                 $output .= '<img alt="' . get_the_title() . '" title="' . get_the_title() . '" src="' . $image_output_src . '" itemprop="image" />';
 
@@ -253,9 +259,9 @@ function blog_modern_style($atts, $current)
             $output .= '<div class="blog-modern-share mk-toggle-trigger"><i class="mk-moon-share-2"></i></div>';
             $output .= '<ul class="blog-social-share mk-box-to-trigger">';
             $output .= '<li><a class="facebook-share" data-title="' . get_the_title() . '" data-url="' . get_permalink() . '" href="#"><i class="mk-jupiter-icon-simple-facebook"></i></a></li>';
-            $output .= '<li><a class="twitter-share" data-title="' . get_the_title() . '" data-url="' . get_permalink() . '" href="#"><i class="mk-moon-twitter"></i></a></li>';
-            $output .= '<li><a class="googleplus-share" data-title="' . get_the_title() . '" data-url="' . get_permalink() . '" href="#"><i class="mk-jupiter-icon-simple-googleplus"></i></a></li>';
-            $output .= '<li><a class="pinterest-share" data-image="' . $lightbox_full_size[0] . '" data-title="' . get_the_title() . '" data-url="' . get_permalink() . '" href="#"><i class="mk-jupiter-icon-simple-pinterest"></i></a></li>';
+            $output .= '<li><a class="twitter-share" data-title="' . get_the_title() . '" data-url="' . get_permalink() . '" href="#"><i class="mk-jupiter-icon-simple-twitter"></i></a></li>';
+            //$output .= '<li><a class="googleplus-share" data-title="' . get_the_title() . '" data-url="' . get_permalink() . '" href="#"><i class="mk-jupiter-icon-simple-googleplus"></i></a></li>';
+            //$output .= '<li><a class="pinterest-share" data-image="' . $lightbox_full_size[0] . '" data-title="' . get_the_title() . '" data-url="' . get_permalink() . '" href="#"><i class="mk-jupiter-icon-simple-pinterest"></i></a></li>';
             $output .= '<li><a class="linkedin-share" data-desc="' . strip_tags(get_the_excerpt()) . '" data-title="' . get_the_title() . '" data-url="' . get_permalink() . '" href="#"><i class="mk-jupiter-icon-simple-linkedin"></i></a></li>';
             $output .= '</ul>';
             $output .= '</div>';
