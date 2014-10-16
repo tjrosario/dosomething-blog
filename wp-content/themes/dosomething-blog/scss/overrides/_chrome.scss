@@ -13,8 +13,14 @@
 
 #mk-header {
   @include clearfix();
-  background: $dark-gray;
+  background: none;
   border-bottom: 0 !important;
+
+  @include media($tablet) {
+    left: 0;
+    position: absolute;
+    top: 0;
+  }
 
   .header-logo {
     float: left;
@@ -41,6 +47,14 @@
   .mk-header-inner {
     background: none;
     border: 0;
+  }
+}
+
+.category {
+  .-hero[role="banner"] {
+    h1 {
+      @include visually-hidden();
+    }
   }
 }
 

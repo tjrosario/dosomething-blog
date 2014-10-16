@@ -415,10 +415,9 @@ if($post_id) {
 
 </header>
 
-<header class="-basic" role="banner">
+<header class="-hero" role="banner">
   <div class="wrapper">
     <h1 class="__title">blog something</h1>
-    <h2 class="__subtitle">insert hero image</h2>  
   </div>
 </header>
 
