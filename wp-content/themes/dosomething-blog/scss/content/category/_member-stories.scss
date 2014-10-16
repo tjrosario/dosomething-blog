@@ -1,4 +1,8 @@
 .category-member-stories {
+  .-hero[role="banner"] {
+    background-image: url("../images/category/header_member_stories.jpg");
+  }
+
   .mk-blog-modern-item {
     &.image-post-type {
       .featured-image,
