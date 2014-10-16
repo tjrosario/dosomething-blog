@@ -95,6 +95,11 @@
         border-right: 0;
       }
 
+      a.menu-item-link {
+        color: $dark-gray;
+        font-size: $font-medium;
+      }
+
       &.current-menu-item {
         &:before,
         &:after {
@@ -133,11 +138,10 @@
             margin-left: -33px;
           }
         }
-      }
 
-      a.menu-item-link {
-        color: $purple;
-        font-size: $font-medium;
+        a.menu-item-link {
+          color: $blue;
+        }
       }
     }
   }

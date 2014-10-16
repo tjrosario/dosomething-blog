@@ -45,7 +45,7 @@ function ds_pagination () {
 
 function onDomReady () {
     mk_animated_contents();
-    mk_lightbox_init();
+    //mk_lightbox_init();
     mk_login_form();
     mk_backgrounds_parallax();
     mk_flexslider_init();
