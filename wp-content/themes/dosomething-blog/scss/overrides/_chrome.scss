@@ -25,12 +25,9 @@
   @include clearfix();
   background: none;
   border-bottom: 0 !important;
-
-  @include media($tablet) {
-    left: 0;
-    position: absolute;
-    top: 0;
-  }
+  left: 0;
+  position: absolute;
+  top: 0;
 
   .header-logo {
     float: left;
@@ -60,7 +57,25 @@
   }
 }
 
+#mk-responsive-nav {
+  background: $off-black;
+}
+
+.mk-opened-nav {
+  #mk-header {
+    background: $off-black;
+    position: relative;
+  }
+}
+
+.mk-close-nav {
+  #mk-header {
+    position: absolute;
+  }
+}
+
 .-hero[role="banner"] {
+  background-image: url("../images/category/header_home_mobile.jpg");
   height: 310px;
 
   @include media($tablet) {
