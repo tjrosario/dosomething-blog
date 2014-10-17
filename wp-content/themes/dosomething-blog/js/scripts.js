@@ -1990,21 +1990,38 @@ function mk_responsive_nav() {
 
   "use strict";
 
-  $('.mk-nav-responsive-link').click(function() {
-    var $body = $('body'),
-      $res_nav = $('#mk-responsive-nav');
-    if ($body.hasClass('mk-opened-nav')) {
-      $body.removeClass('mk-opened-nav').addClass('mk-closed-nav');
-      $res_nav.slideUp(300);
-    } else {
+  var $win = $(window),
+    $body = $('body'),
+    $res_nav = $('#mk-responsive-nav'),
+    duration = 200;
+
+  $win.on('load resize', function () {
+    if ($win.width() >= 768) {
+        closeNav();
+    }
+  });
+
+  function closeNav () {
+      $res_nav.slideUp(duration, function () {
+        $body.removeClass('mk-opened-nav').addClass('mk-closed-nav');
+      });
+  }
+
+  function openNav () {
       $body.removeClass('mk-closed-nav').addClass('mk-opened-nav');
-      $res_nav.slideDown(300);
+      $res_nav.slideDown(duration);
+  }
+
+  $('.mk-nav-responsive-link').click(function() {
+    if ($body.hasClass('mk-opened-nav')) {
+      closeNav();
+    } else {
+        openNav();
     }
   });
 
   $('.mk-toolbar-resposnive-icon').click(function() {
-    var $body = $('body'),
-      $toolbar = $('.mk-header-toolbar');
+    var $toolbar = $('.mk-header-toolbar');
 
 
     if ($body.hasClass('toolbar-oppend')) {
