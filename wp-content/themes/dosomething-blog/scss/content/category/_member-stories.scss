@@ -1,6 +1,10 @@
 .category-member-stories {
   .-hero[role="banner"] {
-    background-image: url("../images/category/header_member_stories.jpg");
+    background-image: url("../images/category/header_member_stories_mobile.jpg");
+
+    @include media($tablet) {
+      background-image: url("../images/category/header_member_stories.jpg");
+    }
   }
 
   .mk-blog-modern-item {

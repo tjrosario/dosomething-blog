@@ -1,5 +1,7 @@
 .home {
   .-hero[role="banner"] {
-    background-image: url("../images/category/header_home.jpg");
+    @include media($tablet) {
+      background-image: url("../images/category/header_home.jpg");
+    }
   }
 }
