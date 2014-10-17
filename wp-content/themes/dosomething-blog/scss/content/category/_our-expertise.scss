@@ -1,5 +1,9 @@
 .category-our-expertise {
   .-hero[role="banner"] {
-    background-image: url("../images/category/header_our_expertise.jpg");
+    background-image: url("../images/category/header_our_expertise_mobile.jpg");
+
+    @include media($tablet) {
+      background-image: url("../images/category/header_our_expertise.jpg");
+    }
   }
 }
