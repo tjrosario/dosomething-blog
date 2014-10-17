@@ -52,6 +52,10 @@
 
 .-hero[role="banner"] {
   height: 310px;
+
+  @include media($tablet) {
+    background-image: url("../images/category/header_home.jpg");
+  }
 }
 
 .category {
