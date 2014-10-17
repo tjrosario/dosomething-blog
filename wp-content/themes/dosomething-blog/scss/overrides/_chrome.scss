@@ -123,47 +123,17 @@
       }
 
       &.current-menu-item {
-        &:before,
-        &:after {
-          top: 100%;
-          left: 50%;
-          border: solid transparent;
-          content: " ";
-          height: 0;
-          width: 0;
-          position: absolute;
-          pointer-events: none;
-        }
+        @include active-nav();
+      }
+    }
+  }
+}
 
-        &:after {
-          border-color: rgba(136, 183, 213, 0);
-          border-top-color: #fff;
-          border-width: 10px;
-          margin-left: -10px;
-        }
-
-        &:before {
-          border-color: rgba(194, 225, 245, 0);
-          border-top-color: $med-gray;
-          border-width: 13px;
-          margin-left: -13px;
-        }
-
-        &:first-child {
-          border-left: 0;
-
-          &:after {
-            margin-left: -30px;
-          }
-
-          &:before {
-            margin-left: -33px;
-          }
-        }
-
-        a.menu-item-link {
-          color: $blue;
-        }
+.home {
+  .main-navigation-ul {
+    li.menu-item {
+      &:first-child {
+        @include active-nav();
       }
     }
   }
