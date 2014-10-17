@@ -1,3 +1,13 @@
+// @TODO: disable this in admin
+
+::selection {
+  background: $blue !important;
+}
+
+::-moz-selection {
+  background: $blue !important;
+}
+
 #theme-page {
   .theme-page-wrapper {
     @include clearfix();
