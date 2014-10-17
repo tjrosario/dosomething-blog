@@ -417,7 +417,6 @@ if($post_id) {
 
 <header class="-hero" role="banner">
   <div class="wrapper">
-    <h1 class="__title">blog something</h1>
   </div>
 </header>
 

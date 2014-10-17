@@ -16,6 +16,12 @@ get_header();
 <div id="theme-page">
 	<div class="theme-page-wrapper right-layout vc_row-fluid mk-grid row-fluid">
 		<div class="theme-content">
+
+        <?php
+        if (is_home()) {
+          //query_posts("cat=9");
+        }
+        ?>
 			<?php 
 			/* Run the blog loop shortcode to output the posts. */
 			echo do_shortcode( '[mk_blog style="modern" el_position="first"]' ); ?>

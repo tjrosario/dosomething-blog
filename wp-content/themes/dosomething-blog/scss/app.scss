@@ -19,6 +19,9 @@ $asset-path: "";
 @import "content/post";
 @import "content/author";
 
+// Homepage
+@import "content/home";
+
 // Categories
 @import "content/category/member-stories";
 @import "content/category/our-expertise";
