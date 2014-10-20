@@ -75,7 +75,8 @@ function blog_modern_style($atts, $current)
             $output .= '<div class="featured-image"><a title="' . get_the_title() . '"' . $lightbox_code . '>';
             */
             $output .= '<div class="featured-image"><a title="' . get_the_title() . '" href="' . get_permalink() . '">';
-            $output .= '<img alt="' . get_the_title() . '" title="' . get_the_title() . '" src="' . $image_output_src . '" itemprop="image" />';
+            //$output .= '<img alt="' . get_the_title() . '" title="' . get_the_title() . '" src="' . $image_output_src . '" itemprop="image" />';
+            $output .= '<img alt="' . get_the_title() . '" title="' . get_the_title() . '" src="' . $image_src_array[0] . '" itemprop="image" />';
 
             $output .= '<div class="image-hover-overlay"></div>';
             $output .= '<div class="post-type-badge"><i class="mk-li-' . $post_type . '"></i></div>';
