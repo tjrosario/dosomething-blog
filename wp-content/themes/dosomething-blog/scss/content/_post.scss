@@ -2,6 +2,11 @@
   @include clearfix();
 
   .featured-image {
+    img {
+      @include fluid-image();
+      margin: 0 auto;
+    }
+
     &:hover {
       img {
         transform: scale(1);
@@ -15,6 +20,7 @@
 
   &.image-post-type {
     .featured-image {
+
       @include media($tablet) {
         @include span-columns(4 of 12);
       }
