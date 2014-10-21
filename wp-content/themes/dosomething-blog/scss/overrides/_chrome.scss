@@ -1,5 +1,4 @@
 // @TODO: disable this in admin
-
 ::selection {
   background: $blue !important;
 }
@@ -75,11 +74,16 @@
 }
 
 .-hero[role="banner"] {
-  background-image: url("../images/category/header_home_mobile.jpg");
+  background-image: url("../dist/images/blog_hero_768x768.jpg");
   height: 310px;
 
   @include media($tablet) {
-    background-image: url("../images/category/header_home.jpg");
+    background-image: url("../dist/images/blog_hero_1440x465.jpg");
+  }
+
+  .__title,
+  .__subtitle {
+    text-transform: uppercase;
   }
 }
 

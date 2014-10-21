@@ -10,7 +10,7 @@ module.exports = {
   },
   prod: {
     files: {
-      "dist/app.min.css": "scss/app.scss"
+      "dist/app.css": "scss/app.scss"
     },
     options: {
       outputStyle: "compressed",
