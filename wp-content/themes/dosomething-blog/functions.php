@@ -9,6 +9,7 @@ if (!isset($content_width)) {
     $content_width = 1140;
 }
 
+
 class Theme
 {
     function init($options)

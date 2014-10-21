@@ -23,9 +23,7 @@ if (!function_exists('mk_theme_slideshow'))
         {
         $disable_slideshow = get_post_meta($post_id, '_enable_slidehsow', true);
         $slideshow_type    = get_post_meta($post_id, '_slideshow_source', true);
-        wp_enqueue_script('transit', THEME_JS . '/jquerytransit.js', array(
-            'jquery'
-        ), '0.9.9');
+        //wp_enqueue_script('transit', THEME_JS . '/jquerytransit.js', array('jquery'), '0.9.9');
         if ($disable_slideshow != 'true')
             {
             return false;
