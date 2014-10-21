@@ -417,6 +417,8 @@ if($post_id) {
 
 <header class="-hero" role="banner">
   <div class="wrapper">
+    <h1 class="__title">Big, Loud, &amp; Easy</h1>
+    <h2 class="__subtitle">A DoSomething.org Blog</h2>
   </div>
 </header>
 
