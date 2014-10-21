@@ -81,9 +81,18 @@
     background-image: url("../dist/images/blog_hero_1440x465.jpg");
   }
 
-  .__title,
-  .__subtitle {
+  > .wrapper {
+    text-align: center;
+  }
+
+  .__title {
     text-transform: uppercase;
+  }
+
+  .__subtitle {
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    width: auto;
   }
 }
 
