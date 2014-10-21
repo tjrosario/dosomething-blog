@@ -21,6 +21,7 @@ function blog_modern_style($atts, $current)
 
     $post_type       = get_post_meta($post->ID, '_single_post_type', true);
 
+
     switch ($image_size) {
         case 'full':
             $image_src_array = wp_get_attachment_image_src(get_post_thumbnail_id(), 'full', true);
@@ -28,9 +29,14 @@ function blog_modern_style($atts, $current)
             break;
         case 'crop':
             $image_src_array = wp_get_attachment_image_src(get_post_thumbnail_id(), 'full', true);
+            /*
             $image_output_src = bfi_thumb($image_src_array[0], array(
                 'width' => $image_width * $image_quality,
                 'height' => $image_height * $image_quality
+            ));
+            */
+            $image_output_src = bfi_thumb($image_src_array[0], array(
+                'width' => 300
             ));
             break;
         case 'large':
@@ -75,8 +81,8 @@ function blog_modern_style($atts, $current)
             $output .= '<div class="featured-image"><a title="' . get_the_title() . '"' . $lightbox_code . '>';
             */
             $output .= '<div class="featured-image"><a title="' . get_the_title() . '" href="' . get_permalink() . '">';
-            //$output .= '<img alt="' . get_the_title() . '" title="' . get_the_title() . '" src="' . $image_output_src . '" itemprop="image" />';
-            $output .= '<img alt="' . get_the_title() . '" title="' . get_the_title() . '" src="' . $image_src_array[0] . '" itemprop="image" />';
+            $output .= '<img alt="' . get_the_title() . '" title="' . get_the_title() . '" src="' . $image_output_src . '" itemprop="image" />';
+            //$output .= '<img alt="' . get_the_title() . '" title="' . get_the_title() . '" src="' . $image_src_array[0] . '" itemprop="image" />';
 
             $output .= '<div class="image-hover-overlay"></div>';
             $output .= '<div class="post-type-badge"><i class="mk-li-' . $post_type . '"></i></div>';
