@@ -14,14 +14,15 @@ global $post;
 get_header();
 ?>
 <div id="theme-page">
-	<div class="theme-page-wrapper right-layout vc_row-fluid mk-grid row-fluid">
-		<div class="theme-content">
-			<?php 
-			/* Run the blog loop shortcode to output the posts. */
-			echo do_shortcode( '[mk_blog style="modern" el_position="first"]' ); ?>
-		</div>
+  <div class="theme-page-wrapper right-layout vc_row-fluid mk-grid row-fluid">
+    <div class="theme-content">
+      <?php 
+       /* Run the blog loop shortcode to output the posts. */
+       echo do_shortcode( '[mk_blog style="modern" el_position="first" cat="4"]' ); 
+      ?>
+    </div>
 
-	<?php //get_sidebar(); ?>	
-	</div>
+  <?php //get_sidebar(); ?> 
+  </div>
 </div>
 <?php get_footer(); ?>
