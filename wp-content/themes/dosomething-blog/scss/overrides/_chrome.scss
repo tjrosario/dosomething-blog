@@ -96,14 +96,6 @@
   }
 }
 
-.category {
-  .-hero[role="banner"] {
-    h1 {
-      @include visually-hidden();
-    }
-  }
-}
-
 .mk-nav-responsive-link {
   color: #fff;
   font-size: $font-large;
@@ -149,6 +141,10 @@
       &:first-child {
         padding-left: 0;
         text-indent: -2px;
+
+        .home & {
+          @include active-nav();
+        }
       }
 
       &:last-child {
@@ -161,16 +157,6 @@
       }
 
       &.current-menu-item {
-        @include active-nav();
-      }
-    }
-  }
-}
-
-.home {
-  .main-navigation-ul {
-    li.menu-item {
-      &:first-child {
         @include active-nav();
       }
     }
