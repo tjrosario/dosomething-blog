@@ -326,7 +326,6 @@
 }
 
 blockquote {
-  line-height: 1.2;
   margin-bottom: 27px;
   text-align: center;
 
@@ -339,19 +338,15 @@ blockquote {
     background: $light-gray;
     content: " ";
     display: block;
-    height: 5px;
+    height: 1px;
     margin: 0 auto;
-    width: 70%;
+    width: 100%;
   }
 
   p {
-    @include media($tablet) {
-      font-size: $font-large;
-    }
-
     font-style: italic;
     margin-bottom: 0;
-    padding: 10px 0;
+    padding: 20px 0;
   }
 }
 
