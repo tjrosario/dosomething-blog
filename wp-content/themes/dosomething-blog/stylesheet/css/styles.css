@@ -4158,6 +4158,7 @@ body:not(.mk-boxed-enabled).dashboard-opened .sticky-style-fixed.header-style-3 
   line-height: 22px !important;
   text-align: left;
 }
+/*
 #mk-responsive-nav {
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
   position: relative;
@@ -4167,8 +4168,8 @@ body:not(.mk-boxed-enabled).dashboard-opened .sticky-style-fixed.header-style-3 
   padding: 0;
   z-index: 20;
 }
+
 #mk-responsive-nav li {
-  display: block;
   margin: 0;
 }
 #mk-responsive-nav li a {
@@ -4219,6 +4220,7 @@ body:not(.mk-boxed-enabled).dashboard-opened .sticky-style-fixed.header-style-3 
   font-weight: bold !important;
   font-size: 14px !important;
 }
+*/
 #mk-responsive-nav > .responsive-searchform {
   display: block !important;
 }
