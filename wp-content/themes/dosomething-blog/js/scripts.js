@@ -2002,14 +2002,14 @@ function mk_responsive_nav() {
   });
 
   function closeNav () {
-      $res_nav.slideUp(duration, function () {
+      //$res_nav.slideUp(duration, function () {
         $body.removeClass('mk-opened-nav').addClass('mk-closed-nav');
-      });
+      //});
   }
 
   function openNav () {
       $body.removeClass('mk-closed-nav').addClass('mk-opened-nav');
-      $res_nav.slideDown(duration);
+      //$res_nav.slideDown(duration);
   }
 
   $('.mk-nav-responsive-link').click(function() {
@@ -2049,7 +2049,7 @@ function mk_responsive_fix() {
   if ($(window).width() > mk_responsive_nav_width) {
 
 
-    $('#mk-responsive-nav').hide();
+    //$('#mk-responsive-nav').hide();
     mk_main_navigation_init();
 
 
