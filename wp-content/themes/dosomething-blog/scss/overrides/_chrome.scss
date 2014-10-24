@@ -58,6 +58,23 @@
 
 #mk-responsive-nav {
   background: $off-black;
+  list-style: none;
+  max-height: 0;
+  margin: 0;
+  overflow: hidden;
+  padding: 0;
+  transition: all .3s ease;
+
+  li {
+    a {
+      display: block;
+      padding: 5px 30px;
+    }
+  }
+
+  .mk-opened-nav & {
+    max-height: 1000px;
+  }
 }
 
 .mk-opened-nav {
