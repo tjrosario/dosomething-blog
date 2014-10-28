@@ -4,8 +4,8 @@ module.exports = {
     tasks: ["lint:css", "sass:prod"]
   },
   js: {
-    files: ["js/**/*.js"],
-    tasks: ["uglify:dev"]
+    files: ["js/ds/**/*.js"],
+    tasks: ["lint:js", "requirejs:dev"]
   },
   assets: {
     files: ["images/ds/**/*"],
