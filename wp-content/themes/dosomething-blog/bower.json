@@ -15,5 +15,8 @@
   ],
   "dependencies": {
     "neue": "DoSomething/neue#~5.0.0"
+  },
+  "devDependencies": {
+    "jquery": "1.11.1"
   }
 }
