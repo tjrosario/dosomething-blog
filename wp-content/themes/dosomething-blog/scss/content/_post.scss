@@ -1,5 +1,6 @@
 .mk-blog-modern-item {
   @include clearfix();
+  margin-bottom: 50px;
 
   .featured-image {
     img {
@@ -69,6 +70,10 @@
 
   .mk-blog-author {
     margin-bottom: 10px;
+
+    a {
+      color: $off-black;
+    }
   }
 
   .blog-modern-comment,
@@ -116,7 +121,7 @@
 
 .mk-blog-single {
   .article-wrapper {
-    padding: 0 20px;
+    padding: 20px;
   }
 
   article {
@@ -136,6 +141,19 @@
   .blog-single-meta {
     float: none;
     line-height: 1;
+    margin-bottom: 20px;
+    margin-top: 20px;
+  }
+
+  .mk-blog-author {
+    display: inline-block;
+  }
+
+  .mk-post-cat {
+    border-left: 1px solid $med-gray;
+    display: inline-block;
+    margin-left: 5px;
+    padding-left: 10px;
   }
 
   .return {
@@ -175,6 +193,8 @@
   }
 
   &.bottom {
+    margin-bottom: 0;
+    
     .single-social-title {
       margin-bottom: 10px;
 
@@ -248,11 +268,6 @@
     color: $med-gray;
     font-size: $font-small;
     font-style: normal;
-  }
-
-  .mk-post-cat {
-    border-left: 1px solid $med-gray;
-    padding-left: 5px;
   }
 }
 
