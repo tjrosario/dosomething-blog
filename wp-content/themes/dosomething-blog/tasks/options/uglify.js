@@ -7,8 +7,8 @@ module.exports = {
     },
     files: {
       "dist/app.js": [
-        "js/vendors.js",
-        "js/scripts.js"
+        "bower_components/jquery/dist/jquery.js",
+        "js/ds/main.js"
       ]
     }
   },
@@ -21,8 +21,8 @@ module.exports = {
     },
     files: {
       "dist/app.js": [
-        "js/vendors.js",
-        "js/scripts.js"
+        "bower_components/jquery/dist/jquery.js",
+        "js/ds/main.js"
       ]
     }
   }
