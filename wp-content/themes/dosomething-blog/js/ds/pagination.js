@@ -14,7 +14,7 @@ define(function(require) {
         $moreBtn = $content.find(moreBtnSel),
         url = $(this).attr("href");
 
-    $loader.addClass("active"); 
+    $loader.addClass("active");
     $.ajax({
       url: url,
       success: function (data) {
