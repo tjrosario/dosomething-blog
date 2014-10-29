@@ -118,11 +118,16 @@
 .mk-nav-responsive-link {
   color: #fff;
   cursor: pointer;
+  display: block;
   font-size: $font-large;
   position: absolute;
   top: 20px;
   right: 20px;
   z-index: 1;
+
+  @include media($tablet) {
+    display: none;
+  }
 }
 
 .mk-header-padding-wrapper {
