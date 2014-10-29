@@ -33,28 +33,28 @@ function mk_theme_enqueue_scripts() {
 
 		$THEME_DIR = get_template_directory_uri();
 		
-		//wp_enqueue_script( 'theme-vendors-min', THEME_JS .'/min/vendors-ck.js', array( 'jquery' ), $theme_data['Version'], true );
+		wp_enqueue_script( 'theme-vendors-min', THEME_JS .'/min/vendors-ck.js', array( 'jquery' ), $theme_data['Version'], true );
 
 		wp_enqueue_script( 'theme-lib-min', THEME_DIR_URI .'/dist/js/lib.js', $theme_data['Version'], true );
 
 		wp_enqueue_script( 'theme-app-min', THEME_DIR_URI .'/dist/js/app.js', $theme_data['Version'], true );
 			
 		if($mk_options['minify-js'] == 'true') {
-            //wp_enqueue_script( 'theme-scripts-min', THEME_JS .'/min/scripts-ck.js', array( 'jquery' ), $theme_data['Version'], true );    
+            wp_enqueue_script( 'theme-scripts-min', THEME_JS .'/min/scripts-ck.js', array( 'jquery' ), $theme_data['Version'], true );    
         } else {
-            //wp_enqueue_script( 'theme-scripts', THEME_JS .'/scripts.js', array( 'jquery' ), $theme_data['Version'], true );    
+            wp_enqueue_script( 'theme-scripts', THEME_JS .'/scripts.js', array( 'jquery' ), $theme_data['Version'], true );    
         }
 
         if($mk_options['minify-css'] == 'true') {
-        	//wp_enqueue_style( 'font-awesome', THEME_STYLES.'/font-awesome.min.css', false, $theme_data['Version'], 'all' );
-			//wp_enqueue_style( 'icomoon-fonts', THEME_STYLES.'/icomoon-fonts.min.css', false, $theme_data['Version'], 'all' );
-			//wp_enqueue_style( 'theme-icons', THEME_STYLES.'/theme-icons.min.css', false, $theme_data['Version'], 'all' );
-			//wp_enqueue_style( 'theme-styles', THEME_STYLES.'/styles.min.css', false, $theme_data['Version'], 'all' );
+        	wp_enqueue_style( 'font-awesome', THEME_STYLES.'/font-awesome.min.css', false, $theme_data['Version'], 'all' );
+			wp_enqueue_style( 'icomoon-fonts', THEME_STYLES.'/icomoon-fonts.min.css', false, $theme_data['Version'], 'all' );
+			wp_enqueue_style( 'theme-icons', THEME_STYLES.'/theme-icons.min.css', false, $theme_data['Version'], 'all' );
+			wp_enqueue_style( 'theme-styles', THEME_STYLES.'/styles.min.css', false, $theme_data['Version'], 'all' );
         } else {
-        	//wp_enqueue_style( 'font-awesome', THEME_STYLES.'/font-awesome.css', false, $theme_data['Version'], 'all' );
-			//wp_enqueue_style( 'icomoon-fonts', THEME_STYLES.'/icomoon-fonts.css', false, $theme_data['Version'], 'all' );
+        	wp_enqueue_style( 'font-awesome', THEME_STYLES.'/font-awesome.css', false, $theme_data['Version'], 'all' );
+			wp_enqueue_style( 'icomoon-fonts', THEME_STYLES.'/icomoon-fonts.css', false, $theme_data['Version'], 'all' );
 			wp_enqueue_style( 'theme-icons', THEME_STYLES.'/theme-icons.css', false, $theme_data['Version'], 'all' );
-			//wp_enqueue_style( 'theme-styles', THEME_STYLES.'/styles.css', false, $theme_data['Version'], 'all' );
+			wp_enqueue_style( 'theme-styles', THEME_STYLES.'/styles.css', false, $theme_data['Version'], 'all' );
 
         }
 
