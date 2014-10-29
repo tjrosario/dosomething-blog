@@ -9,6 +9,19 @@ if (!isset($content_width)) {
     $content_width = 1140;
 }
 
+function dequeue_theme_scripts() {
+  wp_dequeue_script('comment-reply');
+  wp_dequeue_script('theme-vendors-min');
+  wp_dequeue_script('theme-scripts-min');
+  wp_dequeue_script('theme-scripts');
+  wp_dequeue_style('font-awesome');
+  wp_dequeue_style('icomoon-fonts');
+  wp_dequeue_style('theme-icons');
+  wp_dequeue_style('theme-styles');
+  wp_deregister_style('mk-style-css');
+}
+
+add_action('wp_enqueue_scripts','dequeue_theme_scripts', 100);
 
 class Theme
 {

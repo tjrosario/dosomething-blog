@@ -43,13 +43,6 @@ global $mk_options;
          <script src="<?php echo THEME_JS;?>/html5shiv.js" type="text/javascript"></script>
          <link rel='stylesheet' href='<?php echo get_template_directory_uri(); ?>/stylesheet/css/ie.css' /> 
          <![endif]-->
-         <!--[if IE 7 ]>
-               <link href="<?php echo THEME_STYLES;?>/ie7.css" media="screen" rel="stylesheet" type="text/css" />
-               <![endif]-->
-         <!--[if IE 8 ]>
-               <link href="<?php echo THEME_STYLES;?>/ie8.css" media="screen" rel="stylesheet" type="text/css" />
-         <![endif]-->
-
          <!--[if lte IE 8]>
             <script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/js/respond.js"></script>
          <![endif]-->
