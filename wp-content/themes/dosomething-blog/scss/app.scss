@@ -12,10 +12,13 @@ $asset-path: "";
 // Mixins
 @import "helpers/mixins";
 
-// Wordpress Jupiter Theme Overrides
-@import "overrides/chrome";
-@import "overrides/typography";
+// Base
+@import "base/typography";
 
+// Regions - complete sections of an interface
+@import "regions/chrome";
+
+// Content
 @import "content/post";
 @import "content/author";
 

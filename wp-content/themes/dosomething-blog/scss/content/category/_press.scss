@@ -1,9 +1,0 @@
-.category-press {
-  .-hero[role="banner"] {
-    background-image: url("../images/category/header_press_mobile.jpg");
-
-    @include media($tablet) {
-      background-image: url("../images/category/header_press.jpg");
-    }
-  }
-}
