@@ -16,7 +16,6 @@ function dequeue_theme_scripts() {
   wp_dequeue_script('theme-scripts');
   wp_dequeue_style('font-awesome');
   wp_dequeue_style('icomoon-fonts');
-  wp_dequeue_style('theme-icons');
   wp_dequeue_style('theme-styles');
   wp_deregister_style('mk-style-css');
 }
