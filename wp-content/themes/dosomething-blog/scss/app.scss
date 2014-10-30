@@ -12,13 +12,10 @@ $asset-path: "";
 // Mixins
 @import "helpers/mixins";
 
-// Base
-@import "base/typography";
-
 // Regions - complete sections of an interface
 @import "regions/chrome";
 
 // Content
 @import "content/post";
 @import "content/author";
-
+@import "content/member-wins";
