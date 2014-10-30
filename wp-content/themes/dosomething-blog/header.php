@@ -23,6 +23,8 @@ global $mk_options;
         <?php else : ?>
         <link rel="shortcut icon" href="<?php echo THEME_IMAGES; ?>/favicon.png"  />
         <?php endif; ?>
+        <link rel="apple-touch-icon-precomposed" href="<?php echo THEME_IMAGES; ?>/apple-touch-icon-precomposed.png"  />
+
         <?php if($mk_options['iphone_icon']): ?>
         <link rel="apple-touch-icon-precomposed" href="<?php echo $mk_options['iphone_icon']; ?>">
         <?php endif; ?>
