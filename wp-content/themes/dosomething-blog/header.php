@@ -376,16 +376,7 @@ if($toolbar_toggle == 'true' && $header_style != 4) : ?>
 <?php /* End of Header Inner */ ?>
 
 <?php endif; // End for option to disable header ?>
-
-
-
-
-<div class="mk-header-padding-wrapper"></div>
-
-
-
-
-<div class="mk-zindex-fix">    
+  
 
 <?php
 
@@ -397,7 +388,6 @@ if($post_id) {
 
 
 ?>
-</div>
 
 
 
