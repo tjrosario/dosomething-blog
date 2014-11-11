@@ -188,6 +188,8 @@ if($preloader_check == 'enabled') {
 
 <?php if($show_header != 'no-header' && $show_header != 'no-header-title' && $show_header != 'no-header-title-footer' && $show_header != 'no-header-footer') :  ?>
 
+<div class="chrome--nav">
+  
 <div class="mk-header-holder">
 
 <?php 
@@ -372,6 +374,8 @@ if($toolbar_toggle == 'true' && $header_style != 4) : ?>
 
 </div>
 
+</div>
+<?php /* End of Nav Chrome */ ?>
   
 <?php /* End of Header Inner */ ?>
 

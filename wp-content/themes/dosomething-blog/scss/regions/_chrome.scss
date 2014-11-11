@@ -92,6 +92,14 @@
   }
 }
 
+.chrome--nav {
+  margin-bottom: 0;
+  
+  a {
+    color: $blue;
+  }
+}
+
 .-hero[role="banner"] {
   background-image: url("../dist/images/blog_hero_768x768.jpg");
   height: 310px;
