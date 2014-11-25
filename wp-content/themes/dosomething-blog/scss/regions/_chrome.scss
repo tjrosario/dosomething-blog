@@ -208,16 +208,6 @@
   display: none;
 }
 
-#mk-footer {
-  width: 100%;
-  background: #000;
-  margin: 0 auto;
-
-  @include media($tablet) {
-    padding: 18px;
-  }
-}
-
 #respond {
   #submit {
     display: inline-block;
