@@ -208,17 +208,6 @@
   display: none;
 }
 
-.chrome--footer {
-  .wrapper {
-    @include wrapper();
-    padding: 0;
-
-    @include media($tablet) {
-      padding: 0;
-    }
-  }
-}
-
 #respond {
   #submit {
     display: inline-block;
