@@ -208,13 +208,14 @@
   display: none;
 }
 
-#mk-footer {
-  width: 100%;
-  background: #000;
-  margin: 0 auto;
+.chrome--footer {
+  .wrapper {
+    @include wrapper();
+    padding: 0;
 
-  @include media($tablet) {
-    padding: 18px;
+    @include media($tablet) {
+      padding: 0;
+    }
   }
 }
 
