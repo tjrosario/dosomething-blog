@@ -22,6 +22,7 @@ function dequeue_theme_scripts() {
 
 add_action('wp_enqueue_scripts','dequeue_theme_scripts', 100);
 
+
 class Theme
 {
     function init($options)
@@ -132,6 +133,7 @@ class Theme
         add_theme_support('menus');
         add_theme_support('automatic-feed-links');
         add_theme_support('editor-style');
+        add_theme_support('custom-header');
         register_nav_menus(array(
             'primary-menu' => 'Primary Navigation',
             'second-menu' => 'Second Navigation',

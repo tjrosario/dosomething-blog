@@ -101,15 +101,12 @@
 }
 
 .-hero[role="banner"] {
-  background-image: url("../dist/images/blog_hero_768x768.jpg");
+  //background-image: url("../dist/images/blog_hero_768x768.jpg");
   height: 310px;
-
-  @include media($tablet) {
-    background-image: url("../dist/images/blog_hero_1440x465.jpg");
-  }
 
   > .wrapper {
     text-align: center;
+    z-index: 2;
   }
 
   .__title {
@@ -120,6 +117,13 @@
     letter-spacing: 0.1em;
     text-transform: uppercase;
     width: auto;
+  }
+
+  img {
+    display: block;
+    left: 0;
+    position: absolute;
+    top: 0;
   }
 }
 
