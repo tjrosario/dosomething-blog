@@ -409,6 +409,9 @@ if($post_id) {
     <h1 class="__title">Big, Loud, &amp; Easy</h1>
     <h2 class="__subtitle">A DoSomething.org Blog</h2>
   </div>
+  <?php if ( get_header_image() ) : ?>
+    <img src="<?php header_image(); ?>" >
+  <?php endif; ?>
 </header>
 
 <?php 
